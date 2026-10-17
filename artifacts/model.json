@@ -1,0 +1,15 @@
+{
+  "features": [
+    "worst perimeter",
+    "worst radius",
+    "worst concave points",
+    "mean concave points"
+  ],
+  "cutoffs": {
+    "worst perimeter": 113.08636363636361,
+    "worst radius": 16.818863636363634,
+    "worst concave points": 0.1446340909090908,
+    "mean concave points": 0.05062318181818185
+  },
+  "threshold": 3
+}

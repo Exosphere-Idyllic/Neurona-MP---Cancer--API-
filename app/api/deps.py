@@ -1,0 +1,5 @@
+from fastapi import Request
+from app.services.prediction_service import PredictionService
+
+def get_prediction_service(request: Request) -> PredictionService:
+    return PredictionService(request.app.state.model)
