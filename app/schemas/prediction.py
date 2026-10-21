@@ -11,4 +11,5 @@ class PredictionResponse(BaseModel):
     diagnosis: Literal["benigno", "maligno"]
     score: int
     threshold: int
+    accuracy: float = Field(description="Exactitud estimada del modelo en datos de prueba")
     disclaimer: str = "Modelo educativo, no es una herramienta de diagnóstico."

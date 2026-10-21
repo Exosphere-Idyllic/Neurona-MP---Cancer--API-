@@ -11,5 +11,6 @@
     "worst concave points": 0.1446340909090908,
     "mean concave points": 0.05062318181818185
   },
-  "threshold": 3
+  "threshold": 3,
+  "accuracy": 0.951
 }

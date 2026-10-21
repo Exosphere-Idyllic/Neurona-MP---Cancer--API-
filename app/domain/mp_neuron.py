@@ -5,6 +5,7 @@ class MPNeuron:
     features: tuple[str, ...]
     cutoffs: dict[str, float]
     threshold: int
+    accuracy: float = 0.9510
 
     def predict(self, sample: dict[str, float]) -> tuple[bool, int]:
         # 1 si el valor está por debajo del corte, igual que en el notebook

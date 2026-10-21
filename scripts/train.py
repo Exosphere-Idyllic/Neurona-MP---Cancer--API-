@@ -93,6 +93,7 @@ def train_and_export():
         "features": FEATURES,
         "cutoffs": cutoffs,
         "threshold": int(neuron.threshold),
+        "accuracy": round(float(test_acc), 4),
     }
 
     output_path.write_text(json.dumps(model_data, indent=2), encoding="utf-8")

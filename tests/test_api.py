@@ -20,6 +20,7 @@ def test_predict_endpoint():
             "mean concave points": 0.05,
         },
         threshold=3,
+        accuracy=0.951,
     )
     client = TestClient(app)
 
@@ -36,6 +37,7 @@ def test_predict_endpoint():
     assert data_b["diagnosis"] == "benigno"
     assert data_b["score"] == 4
     assert data_b["threshold"] == 3
+    assert data_b["accuracy"] == 0.951
     assert "Modelo educativo" in data_b["disclaimer"]
 
     # Caso maligno (valores altos)
@@ -51,3 +53,4 @@ def test_predict_endpoint():
     assert data_m["diagnosis"] == "maligno"
     assert data_m["score"] == 0
     assert data_m["threshold"] == 3
+    assert data_m["accuracy"] == 0.951

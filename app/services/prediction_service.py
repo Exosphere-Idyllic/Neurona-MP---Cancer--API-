@@ -12,4 +12,5 @@ class PredictionService:
             diagnosis="benigno" if is_benign else "maligno",
             score=score,
             threshold=self._model.threshold,
+            accuracy=self._model.accuracy,
         )
